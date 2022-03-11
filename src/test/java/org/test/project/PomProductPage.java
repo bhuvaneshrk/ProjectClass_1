@@ -12,9 +12,14 @@ public class PomProductPage extends BaseClass{
 	public PomProductPage() {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath="//div[contains(text(),'APPLE')]")
+	@FindBy(xpath="//div[@class='_4rR01T']")
 	private List<WebElement> products;
 	public List<WebElement> getProducts() {
 		return products;
+	}
+	@FindBy(xpath="//div[@class='_30jeq3 _1_WHN1']")
+	private List<WebElement> getPrice;
+	public List<WebElement> getGetPrice() {
+		return getPrice;
 	}
 }
